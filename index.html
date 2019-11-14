@@ -6,7 +6,7 @@
 
         <title>PFAS - NCSU GeoForAll Lab</title>
 
-        <meta name="description" content="Slides for Vienna 2018 presentation">
+        <meta name="description" content="Slides for PFAS presentation">
         <meta name="author" content="Helena Mitasova">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -47,74 +47,245 @@
 <section>
 <!--<h4 style="color: #707070">AAS 2018</h4>-->
 <h2 style="margin-top: 0.0em;color: #000"> 
-    PFAS
+Geospatial tools for NC PFAS Testing Network
 </h2>
 <p>
 <h3 style="color: #707070">Helena Mitasova</h3>
 <!--<img height="50px" style="margin-top: 2em" src="img/cgaBlack.png">
 <h5 style="color: #000">North Carolina State University</h5>-->
 <p>
-<!--    <img src="img/hofierka.jpg" height="120">-->
     <img src="img/people/petrasova.jpg" height="120">
     <img src="img/people/vpetras.jpg" height="120">
-    <img src="img/people/baharmon.jpg" height="120">
-    <img src="img/people/payam.jpg" height="120">
-    <img src="img/people/Justyna_Jeziorska.jpg" height="120">
+    <img src="img/people/wreckling.jpg" height="120">
+    <img src="img/people/bbaines.jpg" height="120">
+    <img src="img/people/sreckling.jpg" height="120">
 </p>
-<p><small>A. Petrasova, &nbsp; &nbsp; V. Petras, &nbsp; &nbsp; B. Harmon, 
-&nbsp; &nbsp; P. Tabrizian, &nbsp; &nbsp; J. Jeziorska</small>
-<p><img src="img/logos/cgaBlack.png" height="40"> &nbsp; &nbsp; <img src="img/logos/4x1white.jpg" height="25">
+<p><small>A. Petrasova, &nbsp; &nbsp; V. Petras, &nbsp; &nbsp; W. Reckling, 
+&nbsp; &nbsp; B. Baines, &nbsp; &nbsp; S. Reckling</small>
+<p><img src="img/logos/cgaBlack.png" height="40"> &nbsp; &nbsp; 
+<img src="img/logos/PFAS-logo-GRAY.png" height="40">
+<img src="img/logos/4x1white.jpg" height="25">
 </section>
 
 <section>
-<h3>
-An incomplete tour through evolution of surface modeling in open source GIS 
-from its beginnings to current state and applications <h3>
-<!--
+<h3>Outline </h3>
 <ul>
-<h2>Dynamic Digital Earth is now a reality</h2>
-Surface modeling  - helps to transform the digital earth data to support to improve disaster response, water and food security, everyday life and well being.
-<li>Earth is mapped at many spatial and temporal scales from global by satellites to local microscale by drones
-<li class="fragment">Only fraction of collected data is used to full potential
-<li class="fragment">Geospatial analytics and modeling is deployed to use these data
+<li>overview of PFAS Testing Network geospatial data with maps of locations
+<li class="fragment">Drinking water sources: water systems, sources and sampling sites
+<li class="fragment">Sampling routing tools: conditions, modules parameters and results
+<li class="fragment">Rapid viewing of GPS data with attributes
+<p>
+<li class="fragment">Groundwater seepage through streams
+<p>
+<li class="fragment">PFAS Testing Network on-line mapping tool prototype
+ 
 </ul>
-<p class="fragment">
-<p class="fragment"><small><a href="https://earth.nullschool.net">Ocean Currents</a>2018 Cameron Beccario </small></p>
 <aside class="notes">
-https://www.nasa.gov/topics/earth/features/perpetual-ocean.html
-https://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=3827 - high res
-http://hint.fm/wind/ realtime wind add to mea582 or gis714
+include graphics maps
 </aside>
--->
 </section>
 
 <section>
-<h2>The beginnings</h2>
-</section>
-
-<section>
-<h3>Pioneering concept of dynamic spatial surfaces</h3>
-<p>Waldo Tobler:
-<p>geospatial phenomena as continuous scalar and vector fields
+<h3>PFAST Network geospatial data</h3>
+Team 1: Drinking water sources
 <p>
-    <img height="330" src="img/surfaces/Tobler_pressuretomodesurface.jpg">
-    <img height="330" src="img/surfaces/Tobler_govfiscal.jpg">
-<p><small>Images from Professor Tobler's slides</small></p>
+    <img height="430" src="img/nc_drinkingwater.jpg">
 </section>
 
 <section>
-<h3>Theoretical foundations: terrain analysis</h3>
-<p>Terrain as continuous field <i>z=f(x,y)</i>, 
-<br>represented by isolines, manually deriving secondary fields
+<h3>PFAST Network geospatial data</h3>
+Team 1: Drinking water sources, Team 2: Groundwater seepage in streams
 <p>
-    <img src="img/surfaces/Krcho_krivosti.jpg" height="380">
-<p> <small>Profle Curvature isolines (Krcho 1973), </small>
+    <img height="430" src="img/nc_dw_gw.jpg">
 </section>
 
 <section>
-    <h3>Appendix</h3>
-Links to related talks:
-TL webinar, GRASS7, Lidar, ICC talk etc.
+<h3>PFAST Network geospatial data</h3>
+Team 1: Drinking water sources, Team 2: Groundwater seepage in streams,
+Team 4: Atmospheric monitoring sites 
+<p>
+    <img height="430" src="img/nc_dw_gw_atm.jpg">
+</section>
+
+<section>
+<h3>PFAST Network geospatial data</h3>
+Team 1: Drinking water sources, Team 2: Groundwater seepage in streams,
+Team 4: Atmospheric monitoring sites, Team 5a: Landfills, waste water plants
+<p>
+    <img height="430" src="img/nc_dw_gw_atm_ww.jpg">
+</section>
+
+<section>
+<h3>PFAST Network geospatial data</h3>
+Team 1: Drinking water sources, Team 2: Groundwater seepage in streams,
+Team 4: Atmospheric monitoring sites, Team 5a: Landfills, waste water plants
+Team 3, Team 5b not added yet
+Integration of all test data should provide a big picture of PFAS status in NC
+<p>
+    <img height="430" src="img/nc_dw_gw_atm_ww.jpg">
+</section>
+
+<section>
+<h3>Drinking water sources</h3>
+<ul>
+ <li>one or more surface water sources (all sampled)
+ <li> 
+</ul>
+<p> <img height="430" src="img/surface_water.jpg">
+</section>
+
+<section>
+<h3>Drinking water sources</h3>
+<ul>
+ <li>one or more surface water sources (all sampled)
+ <li>one or more well water sources (just one sampled)
+<p>
+    <img height="430" src="img/surface_ground_water.jpg">
+<p>
+ Municipial or county, mixed water possible. 
+</section>
+
+<section>
+<h3>Georeferencing drinking water sources</h3>
+Several GPS coordinates may be associated with each drinking source
+<ul>
+ <li class="fragment">DEQ location
+ <li class="fragment">sampled water intake
+ <li class="fragment">sampled tap 
+</ul>
+<p>
+    <img height="430" src="img/sampling_points_zoom.jpg">
+</section>
+
+<section>
+<h3>Drinking water sources routing tool</h3>
+    <img height="430" src="img/surface_ground_water.jpg">
+</section>
+
+<section>
+<h3>Sampling sites database</h3>
+<p>
+Duke integrates sample analysis results in SQLite database - each site has XX attributes, including the PFAS concentrations and GPS coordinates
+<p class="fragment">
+Samples are matched with DEQ data as much as possible - this provides additional variables:
+well gw production, adress, contacts, etc.
+<p class="fragment">     
+    <img height="430" src="img/sampling_points_pwsws.jpg">
+</section>
+
+<section>
+<h3>WS service area</h3>
+<p> Who is drinking the water: sampled water sources are coupled with service area layer 
+number of people, number of connections, history, etc. 
+<p class="fragment">
+    <img height="430" src="img/sampling_points_pwsws.jpg">
+</section>
+
+<section>
+<h3>Drinking water infrastructure</h3>
+Some towns and cities have detailed data GIS datalayers on WS infrastructure 
+<p class="fragment">
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Contributing areas</h3>
+We are deriving contributing areas for each sampling site
+<p class="fragment">
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Potential sources in contributing areas</h3>
+Airports, fire fighting training sites, military installations, landfills, water water plants
+<p class="fragment">
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Land use history in  contributing areas</h3>
+Mapping land use composition since 1974 (landsat), using NWALT data  
+<p class="fragment">
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Online viewing tool: display data</h3>
+Screenshots of the tool to illustrate the data and functionality
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+PostGIS database, QGIS and custom tools
+</section>
+
+<section>
+<h3>Online viewing tool: query data</h3>
+Screenshots of the tool to illustrate the data and functionality
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Online viewing tool: filter data</h3>
+Screenshots of the tool to illustrate the data and functionality
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Online viewing tool: graph concentrations</h3>
+Screenshots of the tool to illustrate the data and functionality
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Online viewing tool: future</h3>
+Screenshots of the tool to illustrate the data and functionality
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>View data from spreadsheets</h3>
+Kepler: easy viewing of simple csv files with GPS data
+<p>name the columns where you have the coordinates as follows: name_lat, name_long
+<p>drop file into Kepler
+<p>adjust symbology based on attributes, filter data, etc.
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Groundwater sampling</h3>
+<p>
+High resolution stream extraction
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Groundwater modeling</h3>
+<p>
+Mapping surficial acquifer thickness
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Groundwater sampling</h3>
+PFAS concentrations, adding the data to on-line tool
+<p>
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Landfill data aggregation</h3>
+<p> Identifying HUC for sampled sites, mapping HUC concentrations
+    <img height="430" src="img/Cary_waterlines.jpg">
+</section>
+
+
+<section>
+    <h3>Conclusion</h3>
 </section>
 
 <!-- This is a generated file. Do not edit. -->

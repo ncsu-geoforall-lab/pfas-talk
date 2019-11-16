@@ -75,15 +75,14 @@ A. Petrasova &nbsp; &nbsp;
 <section>
 <h3>Outline </h3>
 <ul>
-<li>overview of PFAS Testing Network geospatial data with maps of locations
+<li>PFAS Testing Network geospatial data overview
 <li class="fragment">Drinking water sources: water systems, sources and sampling sites
 <li class="fragment">Sampling routing tools: conditions, modules parameters and results
 <li class="fragment">Rapid viewing of GPS data with attributes
-<p>
-<li class="fragment">Groundwater seepage through streams
-<p>
-<li class="fragment">PFAS Testing Network on-line mapping tool prototype
- 
+<p> <li class="fragment">PFAS Testing Network on-line mapping tool prototype
+<p> <li class="fragment">Groundwater seepage through streams
+<p> <li class="fragment">Agreggated landfill and wastewater data
+<p> <li class="fragment">Future work: DEQ data, new sampling round, new analytics data layers, tools
 </ul>
 <aside class="notes">
 include graphics maps
@@ -91,91 +90,160 @@ include graphics maps
 </section>
 
 <section>
-<h3>PFAST Network geospatial data</h3>
-Team 1: Drinking water sources
+<h3>PFAST Network data management</h3>
 <p>
-    <img height="430" src="img/nc_drinkingwater.jpg">
-</section>
-
-<section>
-<h3>PFAST Network geospatial data</h3>
-Team 1: Drinking water sources, Team 2: Groundwater seepage in streams
+PFAST Network Data Hub: RENCI infrastructure
 <p>
-    <img height="430" src="img/nc_dw_gw.jpg">
-</section>
-
-<section>
-<h3>PFAST Network geospatial data</h3>
-Team 1: Drinking water sources, Team 2: Groundwater seepage in streams,
-Team 4: Atmospheric monitoring sites 
-<p>
-    <img height="430" src="img/nc_dw_gw_atm.jpg">
-</section>
-
-<section>
-<h3>PFAST Network geospatial data</h3>
-Team 1: Drinking water sources, Team 2: Groundwater seepage in streams,
-Team 4: Atmospheric monitoring sites, Team 5a: Landfills, waste water plants
-<p>
-    <img height="430" src="img/nc_dw_gw_atm_ww.jpg">
-</section>
-
-<section>
-<h3>PFAST Network geospatial data</h3>
-Team 1: Drinking water sources, Team 2: Groundwater seepage in streams,
-Team 4: Atmospheric monitoring sites, Team 5a: Landfills, waste water plants
-Team 3, Team 5b not added yet
-Integration of all test data should provide a big picture of PFAS status in NC
-<p>
-    <img height="430" src="img/nc_dw_gw_atm_ww.jpg">
-</section>
-
-<section>
-<h3>Drinking water sources</h3>
 <ul>
- <li>one or more surface water sources (all sampled)
- <li> 
+ <li>RENCI: integrated database with all collected data and related workflows
+ <li>see <a href="https://ncpfastnetwork.com/">PFAST website</a> for the type of data collected
+ <li>NCSU CGA: geospatial data acquisition, processing, visualization
 </ul>
-<p> <img height="430" src="img/surface_water.jpg">
+<p>
+    <img height="60" src="img/logos/PFAS-RGBlogo.png">&nbsp; &nbsp;
+    <img height="60" src="img/logos/PFAS-RGBlogo.png">&nbsp; &nbsp;
+    <img height="60" src="img/logos/cgaBlack.png">
+</section>
+
+<section>
+<h3>PFAST Network geospatial data</h3>
+Team 1. Drinking water sources: 403 sites
+<p>
+    <img height="380" src="img/maps_visualizations/nc_sampling_drinkingwb.png">
+</section>
+
+<section>
+<h3>PFAST Network geospatial data</h3>
+Team 2. Groundwater seepage in streams near Chemours: XX sites
+<p>
+    <img height="380" src="img/maps_visualizations/nc_sampling_drinkingwb.png">
+</section>
+
+<section>
+<h3>PFAST Network geospatial data</h3>
+Team 4: Atmospheric monitoring sites: XX sites 
+<p>
+    <img height="380" src="img/maps_visualizations/nc_sampling_drinkingwb.png">
+</section>
+
+<section>
+<h3>PFAST Network geospatial data</h3>
+Team 5a: Landfills, waste water plants: XX sites
+<p>
+    <img height="380" src="img/maps_visualizations/nc_sampling_drinkingwb.png">
+</section>
+
+<section>
+<h3>PFAST Network geospatial data</h3>
+<ul>
+ <li>Not added yet: Team 3 tap water, Team 5b fish, aligators 
+ <li>Integration of all test data should provide a big picture of PFAS status in NC
+</ul>
+<p>
+NC image with ? or PFAS distribution in space and time and various environments
+<p>
+    <img height="380" src="img/maps_visualizations/nc_dw_gw_atm_ww.jpg">
 </section>
 
 <section>
 <h3>Drinking water sources</h3>
 <ul>
- <li>one or more surface water sources (all sampled)
- <li>one or more well water sources (just one sampled)
+ <li>Surface water sources: all sampled
+ <li>Multiple sources in some districts  
+</ul>
+<p> <img height="360" src="img/maps_visualizations/nc_surfacewater_intake.png">
+</section>
+
+<section>
+<h3>Drinking water sources</h3>
+<ul>
+ <li>Groundwater wells: only one sampled, as selected by manager 
+ <li>Challenges indentifying the sampled well - GPS was crucial
+</ul>
 <p>
-    <img height="430" src="img/surface_ground_water.jpg">
+    <img height="360" src="img/maps_visualizations/nc_surfwater_gwsys.png">
+</section>
+
+<section>
+<h3>Drinking water sources</h3>
+<ul>
+ <li>SW + GW + PWSWS        
+ <li>403 sources out of 8411
+</ul>
 <p>
- Municipial or county, mixed water possible. 
+    <img height="360" src="img/maps_visualizations/nc_surfwater_gwsys_pwsws.png">
 </section>
 
 <section>
 <h3>Georeferencing drinking water sources</h3>
 Several GPS coordinates may be associated with each drinking source
 <ul>
- <li class="fragment">DEQ location
- <li class="fragment">sampled water intake
- <li class="fragment">sampled tap 
+ <li>DEQ location (surface intake - blue, groundwater system - red) 
+ <li>sampled water source / intake / well - green
+ <li>sampled tap 
 </ul>
 <p>
-    <img height="430" src="img/sampling_points_zoom.jpg">
+    <img height="260" src="img/maps_visualizations/Town_of_Franklinton.png">
+    <img height="260" src="img/maps_visualizations/Town_of_SpringHope.png">
 </section>
 
 <section>
 <h3>Drinking water sources routing tool</h3>
-    <img height="430" src="img/surface_ground_water.jpg">
+<ul>
+<li>re-optimized after additional sites are added
+<li>routes with coordinates GPS for upload to navigation system (phone or car)
+<li>screenshot of grass manual page - command and interface, describe parameters
+<ul>
+    <p><img height="340" src="img/maps_visualizations/sampling_routs_inkepler-gl_white20co.png">
 </section>
 
 <section>
-<h3>Sampling sites database</h3>
+<h3>Drinking water sources routing tool</h3>
+Example routes 21 through 25, XX days 
+    <img height="400" src="img/maps_visualizations/trips_21_25_kepler-glzoom.png">
+<p> <small>planned speed 45mi/h, actual 39mi/h; time spent at site planned 30 min, actual 21 min</small>
+</section>
+
+<section>
+<h3>On-line tool for spreadsheet data</h3>
+Preview you data and create simple maps with open source kepler.gl
+<ul>
+ <li class="fragment">name the columns with GPS coordinates as name_latitude, name_longitude
+ <li class="fragment">use at least 6 digits for GPS coordinates (0.000010 deg is XX m)
+ <li class="fragment">select only "clean" data (avoid text with commas, NaN, empty cells, etc.)
+ <li class="fragment">export your sheet as csv
+ <li class="fragment">drop your csv file into kepler.gl
+</ul>
+    <img height="200" src="img/maps_visualizations/kepler_datademo.jpg">
+</section>
+
+<section>
+<h3>On-line tool for spreadsheet data</h3>
+Color and size points by attributes
+    <img height="430" src="img/maps_visualizations/trips_21_25_kepler-glzoom.png">
+</section>
+
+<section>
+<h3>On-line tool for spreadsheet data</h3>
+Rasterize and view as 3D, compute heat map
+    <img height="430" src="img/maps_visualizations/trips_21_25_kepler-glzoom.png">
+<p>Reads also geo json files, has API for customization
+</section>
+
+<section>
+<h3>From spreadsheet to database</h3>
 <p>
-Duke integrates sample analysis results in SQLite database - each site has XX attributes, including the PFAS concentrations and GPS coordinates
+Duke integrates sample analysis results in SQLite database - each site has number of attributes, 
+including the PFAS concentrations and GPS coordinates
+
 <p class="fragment">
-Samples are matched with DEQ data as much as possible - this provides additional variables:
-well gw production, adress, contacts, etc.
+Unique ID for each sample is critical for data management
+
+<p class="fragment">
+Samples are matched with DEQ PWSWS data  - this provides additional variables:
+well gw production, adress, contacts, etc. and can be integrated with relevant GIS layers
 <p class="fragment">     
-    <img height="430" src="img/sampling_points_pwsws.jpg">
+    <img height="430" src="img/maps_visualizations/sampling_points_pwsws.jpg">
 </section>
 
 <section>
@@ -183,88 +251,86 @@ well gw production, adress, contacts, etc.
 <p> Who is drinking the water: sampled water sources are coupled with service area layer 
 number of people, number of connections, history, etc. 
 <p class="fragment">
-    <img height="430" src="img/sampling_points_pwsws.jpg">
+    <img height="430" src="img/maps_visualizations/sampling_points_pwsws.jpg">
 </section>
 
 <section>
 <h3>Drinking water infrastructure</h3>
 Some towns and cities have detailed data GIS datalayers on WS infrastructure 
 <p class="fragment">
-    <img height="430" src="img/Cary_waterlines.jpg">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
 </section>
 
 <section>
 <h3>Contributing areas</h3>
 We are deriving contributing areas for each sampling site
 <p class="fragment">
-    <img height="430" src="img/Cary_waterlines.jpg">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
 </section>
 
 <section>
 <h3>Potential sources in contributing areas</h3>
 Airports, fire fighting training sites, military installations, landfills, water water plants
 <p class="fragment">
-    <img height="430" src="img/Cary_waterlines.jpg">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
 </section>
 
 <section>
 <h3>Land use history in  contributing areas</h3>
 Mapping land use composition since 1974 (landsat), using NWALT data  
 <p class="fragment">
-    <img height="430" src="img/Cary_waterlines.jpg">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
 </section>
 
 <section>
-<h3>Online viewing tool: display data</h3>
+<h3>NC PFAS viewer: display data</h3>
+<p>
+Display sampled sites colored by selected atribute (e.g. concentration)
+<p>
+    <img height="430" src="img/maps_visualizations/Concentration.png">
+<p>PostGIS database, QGIS and custom tools
+</section>
+
+<section>
+<h3>NC PFAS viewer: query data</h3>
+Query selected site, show concentrations, associated service area 
+and its attributes: population served, production capacity
+<p>
+    <img height="440" src="img/maps_visualizations/view_caryzoom.png">
+</section>
+
+<section>
+<h3>NC PFAS viewer: graph concentrations</h3>
+Query a site, graph distribution of PFAS concentrations, display potential sources
+<p>
+    <img height="440" src="img/maps_visualizations/Dataviz.png">
+</section>
+
+<section>
+<h3>NC PFAS viewer: filter data</h3>
 Screenshots of the tool to illustrate the data and functionality
 <p>
-    <img height="430" src="img/Cary_waterlines.jpg">
-PostGIS database, QGIS and custom tools
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
 </section>
 
 <section>
-<h3>Online viewing tool: query data</h3>
-Screenshots of the tool to illustrate the data and functionality
+<h3>NC PFAS viewer: future</h3>
+<ul>
+ <li>Integrate with RENCI data hub and DEQ data
+ <li>Derive and add relevant data sets to support analysis and modeling
+ <li>Beyond viewer
+</ul>
 <p>
-    <img height="430" src="img/Cary_waterlines.jpg">
-</section>
-
-<section>
-<h3>Online viewing tool: filter data</h3>
-Screenshots of the tool to illustrate the data and functionality
-<p>
-    <img height="430" src="img/Cary_waterlines.jpg">
-</section>
-
-<section>
-<h3>Online viewing tool: graph concentrations</h3>
-Screenshots of the tool to illustrate the data and functionality
-<p>
-    <img height="430" src="img/Cary_waterlines.jpg">
-</section>
-
-<section>
-<h3>Online viewing tool: future</h3>
-Screenshots of the tool to illustrate the data and functionality
-<p>
-    <img height="430" src="img/Cary_waterlines.jpg">
-</section>
-
-<section>
-<h3>View data from spreadsheets</h3>
-Kepler: easy viewing of simple csv files with GPS data
-<p>name the columns where you have the coordinates as follows: name_lat, name_long
-<p>drop file into Kepler
-<p>adjust symbology based on attributes, filter data, etc.
-    <img height="430" src="img/Cary_waterlines.jpg">
+    <img height="320" src="img/maps_visualizations/ResidentialWellTestingDec14_DEQ.jpg">
+    <img height="320" src="img/maps_visualizations/ResidentialWellTestingDec14_DEQ.jpg">
 </section>
 
 <section>
 <h3>Groundwater sampling</h3>
 <p>
-High resolution stream extraction
+High resolution stream extraction - show location, photo?
 <p>
-    <img height="430" src="img/Cary_waterlines.jpg">
+    <img height="430" src="img/maps_visualizations/Streams_NHD_GRASSlidarcroped.png">
 </section>
 
 <section>
@@ -285,12 +351,19 @@ PFAS concentrations, adding the data to on-line tool
 <section>
 <h3>Landfill data aggregation</h3>
 <p> Identifying HUC for sampled sites, mapping HUC concentrations
-    <img height="430" src="img/Cary_waterlines.jpg">
+    <img height="430" src="img/maps_visualizations/POTW_HUC6.png">
 </section>
 
+<section>
+<h3>Future if funding available</h3>
+Geospatial Analytics: assist with understanding of sources, transport and fate
+Geospatial Simulations: scenarios, decision support, where to go from here
+    <img height="430" src="img/Cary_waterlines.png">
+</section>
 
 <section>
-    <h3>Conclusion</h3>
+    <h3>Thank you</h3>
+TL video
 </section>
 
 <!-- This is a generated file. Do not edit. -->

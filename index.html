@@ -151,7 +151,7 @@ of PFAS spatial and temporal distribution in North Carolina
 <section>
 <h3>Drinking water sources</h3>
 <ul>
- <li>Surface water sources: all sampled
+ <li>Municipial surface water sources: all sampled
  <li>Multiple sources in some districts  
 </ul>
 <p> <img height="360" src="img/maps_visualizations/nc_surfacewater_intake.png">
@@ -160,7 +160,7 @@ of PFAS spatial and temporal distribution in North Carolina
 <section>
 <h3>Drinking water sources</h3>
 <ul>
- <li>Groundwater wells: only one sampled, as selected by manager 
+ <li>Groundwater wells: only one per system sampled 
  <li>Challenges indentifying the sampled well - GPS was crucial
 </ul>
 <p>
@@ -178,7 +178,7 @@ of PFAS spatial and temporal distribution in North Carolina
 </section>
 
 <section>
-<h3>Drinking water sources</h3>
+<h3>Drinking water sampled sites</h3>
 <ul>
  <li>All public groundwater and surface drinking water sources 
  <li>403 largest sources out of 8411 are sampled
@@ -188,7 +188,7 @@ of PFAS spatial and temporal distribution in North Carolina
 </section>
 
 <section>
-<h3>Georeferencing drinking water sources</h3>
+<h3>Georeferencing drinking water samples</h3>
 Several GPS coordinates may be associated with each drinking source
 <ul>
  <li>DEQ location (surface intake - blue, groundwater system - red) 
@@ -201,9 +201,37 @@ Several GPS coordinates may be associated with each drinking source
 </section>
 
 <section>
+<h3>From spreadsheet to database</h3>
+<p>
+Duke integrates sample analysis results for Team 1 in SQLite database
+- each site has number of attributes, including the PFAS concentrations and GPS coordinates
+
+<p class="fragment">
+<b>Unique ID</b> for each sample is critical for data management
+
+<p class="fragment">
+Samples are matched with DEQ PWSWS data for additional variables:
+adress, contacts, well gw production, integration with GIS layers
+for further analysis
+<p class="fragment">
+    <img height="380" src="img/maps_visualizations/Team1_samplingsites.png">
+<p><small>Surface water and groundwater sites by well yield and depth</small>
+</section>
+
+<section>
+<h3>Geospatial Tools</h3>
+<ul>
+ <li>Sampling campaign planning tool
+ <li>Point data on-line viewer
+ <li>NC PFAS Testing Data Viewer
+</ul>
+</section>
+
+<section>
 <h3>Sampling campaign planning tool</h3>
 <p>Scheduling and routing software tool to support optimized sampling of many sites:
 <a href="https://vpetras.gitlab.io/v.net.tripplanner/"><b>v.net.tripplanner</b></a>
+implemented in <a href="https://grass.osgeo.org/">GRASS GIS</a>
     <ul>
     <li class="fragment">travel from home to multiple sites over multiple trips
     <li class="fragment">optimize number of trips needed at average travel speed
@@ -216,19 +244,19 @@ Several GPS coordinates may be associated with each drinking source
 <section>
 <h3>Sampling campaign planning tool</h3>
 Example routes 21 through 25 for second campaign 
-    <img height="400" src="img/maps_visualizations/trips_21_25_kepler-glzoom.png">
+    <img height="440" src="img/maps_visualizations/trips_21_25_kepler-glzoom.png">
 <p> <small>planned speed 45mi/h, actual 39mi/h; time spent at site planned 30 min, actual 21 min</small>
 </section>
 
 <section>
-<h3>On-line viewing tool for spreadsheet data</h3>
-Preview you data and create simple maps with open source kepler.gl
+<h3>On-line viewing tool for point data with attributes</h3>
+Preview your spreadsheet data and create maps with open source kepler.gl
 <ul>
  <li class="fragment">name the columns with GPS coordinates as name_latitude, name_longitude
  <li class="fragment">use at least 6 digits for GPS coordinates (0.000010 deg is XX m)
  <li class="fragment">select only "clean" data (avoid text with commas, NaN, empty cells, etc.)
  <li class="fragment">export your sheet as csv
- <li class="fragment">drop your csv file into kepler.gl
+ <li class="fragment">drop your csv file into kepler.gl (limit 250 Mb)
 </ul>
     <img height="200" src="img/maps_visualizations/kepler_datademo.jpg">
 </section>
@@ -244,60 +272,6 @@ Color and size points by attributes
 Rasterize and view as 3D, compute heat map
     <img height="430" src="img/maps_visualizations/trips_21_25_kepler-glzoom.png">
 <p>Reads also geo json files, has API for customization
-</section>
-
-<section>
-<h3>From spreadsheet to database</h3>
-<p>
-Duke integrates sample analysis results for Team 1 in SQLite database 
-- each site has number of attributes, including the PFAS concentrations and GPS coordinates
-
-<p class="fragment">
-<b>Unique ID</b> for each sample is critical for data management
-
-<p class="fragment">
-Samples are matched with DEQ PWSWS data for additional variables:
-adress, contacts, well gw production, integration with GIS layers
-for further analysis
-<p class="fragment">     
-    <img height="380" src="img/maps_visualizations/Team1_samplingsites.png">
-<p><small>Surface water and groundwater sites by well yield and depth</small>
-</section>
-
-<section>
-<h3>WS service area</h3>
-<p> Who is drinking the water: sampled water sources are coupled with service area layer 
-number of people, number of connections, history, etc. 
-<p class="fragment">
-    <img height="430" src="img/maps_visualizations/sampling_points_pwsws.jpg">
-</section>
-
-<section>
-<h3>Drinking water infrastructure</h3>
-Some towns and cities have detailed data GIS datalayers on WS infrastructure 
-<p class="fragment">
-    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
-</section>
-
-<section>
-<h3>Contributing areas</h3>
-We are deriving contributing areas for each sampling site
-<p class="fragment">
-    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
-</section>
-
-<section>
-<h3>Potential sources in contributing areas</h3>
-Airports, fire fighting training sites, military installations, landfills, water water plants
-<p class="fragment">
-    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
-</section>
-
-<section>
-<h3>Land use history in  contributing areas</h3>
-Mapping land use composition since 1974 (landsat), using NWALT data  
-<p class="fragment">
-    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
 </section>
 
 <section>
@@ -341,6 +315,42 @@ Screenshots of the tool to illustrate the data and functionality
 <p>
     <img height="320" src="img/maps_visualizations/ResidentialWellTestingDec14_DEQ.jpg">
     <img height="320" src="img/maps_visualizations/ResidentialWellTestingDec14_DEQ.jpg">
+</section>
+
+<section>
+<h3>WS service area</h3>
+<p> Who is drinking the water: sampled water sources are coupled with service area layer
+number of people, number of connections, history, etc.
+<p class="fragment">
+    <img height="430" src="img/maps_visualizations/sampling_points_pwsws.jpg">
+</section>
+
+<section>
+<h3>Drinking water infrastructure</h3>
+Some towns and cities have detailed data GIS datalayers on WS infrastructure
+<p class="fragment">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Contributing areas</h3>
+We are deriving contributing areas for each sampling site
+<p class="fragment">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Potential sources in contributing areas</h3>
+Airports, fire fighting training sites, military installations, landfills, water water plants
+<p class="fragment">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
+</section>
+
+<section>
+<h3>Land use history in  contributing areas</h3>
+Mapping land use composition since 1974 (landsat), using NWALT data
+<p class="fragment">
+    <img height="430" src="img/maps_visualizations/Cary_waterlines.jpg">
 </section>
 
 <section>
